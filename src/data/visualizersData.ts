@@ -1,0 +1,213 @@
+import { VisualizerModule } from '../types';
+
+export const VISUALIZERS: VisualizerModule[] = [
+  {
+    id: 'array-algorithms',
+    folderName: 'array-algorithms-visualizer',
+    title: 'Array Algorithms Visualizer',
+    category: 'Arrays & Matrices',
+    description: 'Master fundamental array manipulations including Kadane’s algorithm, Prefix Sums, Dutch National Flag sorting, and Array Rotations.',
+    difficulty: 'Beginner',
+    algorithmsCount: 8,
+    topics: ["Kadane's Algorithm", "Prefix Sums", "Dutch National Flag", "Array Rotation", "Majority Element"],
+    icon: 'Grid',
+    port: 3001
+  },
+  {
+    id: 'binary-search',
+    folderName: 'binary-search-engine-&-answer-space-visualizer',
+    title: 'Binary Search & Answer Space',
+    category: 'Searching',
+    description: 'Explore discrete logarithmic searching, Lower/Upper bounds, Rotated sorted array search, and Binary Search on Answer Space problems.',
+    difficulty: 'Intermediate',
+    algorithmsCount: 6,
+    topics: ["Binary Search", "Lower/Upper Bound", "Rotated Array", "Answer Space Search", "Aggressive Cows"],
+    icon: 'Search',
+    port: 3002
+  },
+  {
+    id: 'binary-search-tree',
+    folderName: 'binary-search-tree-visualizer (1)',
+    title: 'Binary Search Tree (BST) Engine',
+    category: 'Trees',
+    description: 'Dynamic tree rendering for BST operations: Insert, Delete, Search, Inorder/Preorder/Postorder traversals, and AVL self-balancing.',
+    difficulty: 'Intermediate',
+    algorithmsCount: 7,
+    topics: ["BST Insert & Delete", "Tree Traversals", "Floor & Ceil", "Lowest Common Ancestor", "AVL Rotations"],
+    icon: 'GitPullRequest',
+    port: 3003
+  },
+  {
+    id: 'binary-tree',
+    folderName: 'binary-tree-visualizer (1)',
+    title: 'Binary Tree Algorithms',
+    category: 'Trees',
+    description: 'Comprehensive binary tree explorer for BFS level-order, tree height, max path sum, diameter calculation, and view reconstructions.',
+    difficulty: 'Intermediate',
+    algorithmsCount: 9,
+    topics: ["Level Order Traversal", "Max Path Sum", "Tree Diameter", "Left/Right View", "Serialize/Deserialize"],
+    icon: 'Network',
+    port: 3004
+  },
+  {
+    id: 'bitwise-intervals',
+    folderName: 'bitwise-&-interval-algorithm-visualizer',
+    title: 'Bitwise & Interval Algorithm Engine',
+    category: 'Bit Manipulation & Intervals',
+    description: 'Visualize binary bit shifts, XOR tricks, interval merging, non-overlapping interval scheduling, and insert interval logic.',
+    difficulty: 'Intermediate',
+    algorithmsCount: 7,
+    topics: ["Bit Manipulation", "Merge Intervals", "Insert Interval", "Single Number", "Interval Scheduling"],
+    icon: 'Binary',
+    port: 3005
+  },
+  {
+    id: 'fast-slow-pointers',
+    folderName: 'fast-&-slow-pointers-engine',
+    title: 'Fast & Slow Pointers Engine',
+    category: 'Linked Lists',
+    description: 'Interactive Tortoise and Hare algorithm engine for cycle detection in linked lists, middle node identification, and happy number verification.',
+    difficulty: 'Beginner',
+    algorithmsCount: 5,
+    topics: ["Floyd's Cycle Detection", "Find Middle Node", "Happy Number", "LinkedList Cycle II", "Palindrome List"],
+    icon: 'Activity',
+    port: 3006
+  },
+  {
+    id: 'graph-algorithms',
+    folderName: 'graph-algorithms-visualizer (1)',
+    title: 'Graph Algorithms Suite',
+    category: 'Graphs',
+    description: 'Interactive pathfinding & graph traversals featuring BFS, DFS, Dijkstra’s Shortest Path, Kahn’s Topological Sort, and Kruskal’s MST.',
+    difficulty: 'Advanced',
+    algorithmsCount: 12,
+    topics: ["BFS & DFS", "Dijkstra's Algorithm", "Topological Sort", "Kruskal's MST", "Bellman-Ford", "Cycle Detection"],
+    icon: 'Share2',
+    port: 3007
+  },
+  {
+    id: 'heap-priority-queue',
+    folderName: 'heap-&-priority-queue-visualizer',
+    title: 'Heap & Priority Queue Visualizer',
+    category: 'Heaps',
+    description: 'Step-by-step Min-Heap and Max-Heap build, Heapify up/down animations, Heap Sort, Top K Frequent Elements, and Running Median.',
+    difficulty: 'Intermediate',
+    algorithmsCount: 6,
+    topics: ["Min/Max Heap", "Heapify Operations", "Heap Sort", "Kth Largest Element", "Median Stream"],
+    icon: 'Layers',
+    port: 3008
+  },
+  {
+    id: 'linked-list',
+    folderName: 'linked-list-pointer-engine (1)',
+    title: 'Linked List Pointer Engine',
+    category: 'Linked Lists',
+    description: 'Real-time memory pointer pointer movement for Singly & Doubly Linked Lists: Reversal, Merging sorted lists, and K-group reversals.',
+    difficulty: 'Beginner',
+    algorithmsCount: 8,
+    topics: ["Singly Linked List", "Doubly Linked List", "Reverse List", "Merge Sorted Lists", "Reverse K-Group"],
+    icon: 'Link',
+    port: 3009
+  },
+  {
+    id: 'math-prefix-sum',
+    folderName: 'math and prefix sum',
+    title: 'Math & Prefix Sum Engine',
+    category: 'Math & Arrays',
+    description: 'Mathematical visualization suite featuring Sieve of Eratosthenes, Euclidean GCD, 2D Matrix Prefix Sums, and Difference Array technique.',
+    difficulty: 'Beginner',
+    algorithmsCount: 6,
+    topics: ["Sieve of Eratosthenes", "Euclidean GCD", "1D & 2D Prefix Sum", "Difference Array", "Modular Power"],
+    icon: 'Calculator',
+    port: 3010
+  },
+  {
+    id: 'queue-deque',
+    folderName: 'queue-&-deque-algorithms-visualizer',
+    title: 'Queue & Deque Engine',
+    category: 'Queues',
+    description: 'FIFO Queue, Circular Queue, Double-ended Queue (Deque) operations, and Sliding Window Maximum monotonic queue simulations.',
+    difficulty: 'Beginner',
+    algorithmsCount: 5,
+    topics: ["Circular Queue", "Deque Operations", "Sliding Window Max", "Queue via Stacks", "First Non-repeating"],
+    icon: 'ListFilter',
+    port: 3011
+  },
+  {
+    id: 'recursion-backtracking',
+    folderName: 'recursion-&-backtracking-algorithms-visualizer',
+    title: 'Recursion & Backtracking Engine',
+    category: 'Backtracking',
+    description: 'Visualize recursive state trees and backtracking decision paths for N-Queens, Sudoku Solver, Subset Generation, and Maze Pathfinding.',
+    difficulty: 'Advanced',
+    algorithmsCount: 8,
+    topics: ["N-Queens Puzzle", "Sudoku Solver", "Subsets & Combination", "Permutations", "Rat in a Maze"],
+    icon: 'Cpu',
+    port: 3012
+  },
+  {
+    id: 'sliding-window',
+    folderName: 'sliding-window-visualizer',
+    title: 'Sliding Window Visualizer',
+    category: 'Two Pointers & Windows',
+    description: 'Dynamic window expansion & contraction animations for Fixed Window Sum, Longest Substring Without Repeating Chars, and Min Window Substring.',
+    difficulty: 'Intermediate',
+    algorithmsCount: 7,
+    topics: ["Fixed Window Sum", "Longest Substring", "Min Window Substring", "Max Consecutive Ones", "Fruit Into Baskets"],
+    icon: 'Maximize2',
+    port: 3013
+  },
+  {
+    id: 'stack-expression',
+    folderName: 'stack-algorithms-&-expression-engine-visualizer',
+    title: 'Stack & Monotonic Expression Engine',
+    category: 'Stacks',
+    description: 'LIFO Stack animations, Next Greater Element (Monotonic Stack), Valid Parentheses matcher, Infix to Postfix conversion, and RPN evaluator.',
+    difficulty: 'Intermediate',
+    algorithmsCount: 7,
+    topics: ["Monotonic Stack", "Next Greater Element", "Valid Parentheses", "Infix to Postfix", "RPN Evaluator"],
+    icon: 'Database',
+    port: 3014
+  },
+  {
+    id: 'string-algorithms',
+    folderName: 'string-algorithms-&-pattern-matching-visualizer',
+    title: 'String Algorithms & Pattern Matching',
+    category: 'Strings & Tries',
+    description: 'Explore pattern matching algorithms: KMP Prefix Table (LPS), Rabin-Karp Rolling Hash, Z-Algorithm, and Trie Data Structure Autocomplete.',
+    difficulty: 'Advanced',
+    algorithmsCount: 6,
+    topics: ["KMP Algorithm", "Rabin-Karp Hashing", "Z-Algorithm", "Trie Insert/Search", "Longest Palindromic Substring"],
+    icon: 'Code2',
+    port: 3015
+  },
+  {
+    id: 'two-pointers-kadane',
+    folderName: 'two-pointers-&-kadane\'s-visualizer',
+    title: 'Two Pointers & Kadane’s Engine',
+    category: 'Two Pointers & Windows',
+    description: 'Interactive pointer collision & tracking for Two Sum (Sorted), 3Sum, Trapping Rain Water, Container With Most Water, and Kadane’s Max Subarray.',
+    difficulty: 'Beginner',
+    algorithmsCount: 6,
+    topics: ["Two Sum", "3Sum Problem", "Trapping Rain Water", "Container With Most Water", "Kadane's Subarray"],
+    icon: 'MoveHorizontal',
+    port: 3016
+  }
+];
+
+export const CATEGORIES = [
+  'All',
+  'Arrays & Matrices',
+  'Searching',
+  'Trees',
+  'Graphs',
+  'Linked Lists',
+  'Heaps',
+  'Stacks',
+  'Queues',
+  'Two Pointers & Windows',
+  'Backtracking',
+  'Strings & Tries',
+  'Bit Manipulation & Intervals',
+  'Math & Arrays'
+];

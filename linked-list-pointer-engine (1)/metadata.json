@@ -1,0 +1,6 @@
+{
+  "name": "Linked List Pointer Engine",
+  "description": "An interactive premium visualizer for linked list pointer rewiring, in-place reversals, and multi-list splicing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Binary Tree Visualizer",
+  "description": "An interactive visualization tool for exploring, editing, and understanding Binary Tree (Non-BST) algorithms, structures, and traversals with synchronized C++ line tracing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Sigma Math Engine",
+  "description": "An interactive, single-viewport workspace to visualize cumulative prefix sums, difference arrays, hash-map subarray lookups, and essential mathematical algorithms in real time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Binary Search Tree Visualizer",
+  "description": "Interactive visualization and C++ code tracing engine for Binary Search Tree algorithms and operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

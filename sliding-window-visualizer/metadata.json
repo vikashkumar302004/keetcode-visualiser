@@ -1,0 +1,6 @@
+{
+  "name": "Sliding Window Visualizer",
+  "description": "Interactive Sliding Window & Two Pointers Algorithms Visualizer with step-by-step C++ trace, elastic bracket canvas, frequency maps, and monotonic deque inspector.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

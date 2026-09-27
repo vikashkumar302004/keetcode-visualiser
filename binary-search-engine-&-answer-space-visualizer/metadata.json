@@ -1,0 +1,6 @@
+{
+  "name": "Binary Search Engine & Answer-Space Visualizer",
+  "description": "An interactive simulator for standard, rotated, 2D matrix, and answer-space binary searches with synchronous C++ tracing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

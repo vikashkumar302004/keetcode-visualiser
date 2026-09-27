@@ -1,0 +1,6 @@
+{
+  "name": "Graph Algorithms Visualizer",
+  "description": "Interactive graph algorithms visualizer and synchronized C++ code tracer featuring Word Ladder (LC 127), Word Search (LC 79), Course Schedule I & II, Tarjan's Bridges, Articulation Points, Make Network Connected, Eulerian Circuit, Cheapest Flights within K Stops, COVID Spread, DFS, BFS, Dijkstra, Prim, and Kruskal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

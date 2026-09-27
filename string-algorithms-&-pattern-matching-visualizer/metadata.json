@@ -1,0 +1,6 @@
+{
+  "name": "String Algorithms & Pattern Matching Visualizer",
+  "description": "Premium production-ready single-view educational simulation tool for string manipulation, frequency hashing, palindromes, KMP, Rabin-Karp, and Z-Algorithm.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Queue & Deque Algorithms Visualizer",
+  "description": "An interactive, premium single-view visualizer for queue, deque, and circular queue algorithms, with step-by-step C++ tracing and state inspection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

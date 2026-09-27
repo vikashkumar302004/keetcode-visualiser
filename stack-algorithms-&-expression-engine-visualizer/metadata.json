@@ -1,0 +1,6 @@
+{
+  "name": "Stack Algorithms & Expression Engine Visualizer",
+  "description": "An interactive visualizer for fundamental stack operations, infix/prefix/postfix expressions, and advanced monotonic stack patterns with C++ trace synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

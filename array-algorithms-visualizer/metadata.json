@@ -1,0 +1,6 @@
+{
+  "name": "Array Algorithms Visualizer",
+  "description": "An interactive, in-place array manipulation engine for multi-pointers, frequency counting, and mathematical array patterns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

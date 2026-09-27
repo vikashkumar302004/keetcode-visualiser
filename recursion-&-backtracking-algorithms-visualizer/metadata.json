@@ -1,0 +1,6 @@
+{
+  "name": "Recursion & Backtracking Algorithms Visualizer",
+  "description": "An interactive premium visualizer for exploring recursion stack frames, tree branching dynamics, backtracking rollbacks, and combinatorial constraint satisfaction problems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

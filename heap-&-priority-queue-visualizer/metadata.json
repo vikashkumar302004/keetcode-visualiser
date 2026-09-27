@@ -1,0 +1,6 @@
+{
+  "name": "Heap & Priority Queue Visualizer",
+  "description": "Interactive dual-canvas visualizer for Heap and Priority Queue algorithms with synchronized binary tree, array index mappings, C++ trace, and live state inspection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

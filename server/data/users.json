@@ -1,0 +1,16 @@
+[
+  {
+    "id": "user_default_1",
+    "name": "Vikash",
+    "email": "vikash@keetcode.dev",
+    "password": "032958ae31fabe76967eacdebc16ab4fc3fe396bf9cd3a4d3e45294f71e9b533",
+    "createdAt": "2026-09-27T14:46:47.296Z"
+  },
+  {
+    "id": "user_1790520432163_itfor",
+    "name": "Rahul Kumar",
+    "email": "rahul@gmail.com",
+    "password": "fd211e429f3d20389f38a0eb1e7d63a66fa7f0851ccee681258bbf00fafcc160",
+    "createdAt": "2026-09-27T14:47:12.163Z"
+  }
+]

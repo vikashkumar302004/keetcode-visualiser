@@ -1,0 +1,6 @@
+{
+  "name": "Two Pointers & Kadane's Visualizer",
+  "description": "An interactive, dual-canvas simulator for Two Pointers, Same Direction, and Kadane's Algorithms with synchronized trace and state inspection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

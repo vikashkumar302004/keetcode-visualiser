@@ -1,0 +1,6 @@
+{
+  "name": "Bitwise & Interval Algorithm Visualizer",
+  "description": "An interactive educational platform for visualizing bitwise operations and interval-based algorithms with step-by-step C++ line tracing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

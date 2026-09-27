@@ -1,0 +1,6 @@
+{
+  "name": "Fast & Slow Pointers Engine",
+  "description": "An interactive, premium visualizer for Floyd's Cycle Detection and slow/fast pointer algorithms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

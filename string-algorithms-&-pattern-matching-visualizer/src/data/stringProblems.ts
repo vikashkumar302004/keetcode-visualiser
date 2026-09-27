@@ -1,0 +1,217 @@
+import { ProblemMetadata } from '../types';
+
+export const STRING_PROBLEMS: ProblemMetadata[] = [
+  // Category 1: String Parsing & Tokenization
+  {
+    id: 'reverse_words',
+    sequenceNum: 1,
+    category: 'String Parsing & Tokenization',
+    title: 'Reverse Words in a String',
+    leetcodeTag: 'LC #151',
+    difficulty: 'Medium',
+    invariant: 'Tokenize words by boundaries, discard redundant spaces, and reverse the words array in-place or via two-pointers.',
+    details: 'Trims leading/trailing spaces, compresses multiple spaces into one, then reverses the entire string followed by reversing each individual word to recover word order.',
+    defaultText: '  the sky is   blue  ',
+    defaultPattern: '',
+    expectedOutput: '"blue is sky the"'
+  },
+  {
+    id: 'longest_common_prefix',
+    sequenceNum: 2,
+    category: 'String Parsing & Tokenization',
+    title: 'Longest Common Prefix',
+    leetcodeTag: 'LC #14',
+    difficulty: 'Easy',
+    invariant: 'Horizontal reduction checks LCP of current prefix against next string, narrowing it down. Vertical scanning checks character-by-character across all strings.',
+    details: 'Compares characters at index i across all strings in the list. The moment a mismatch is found or a string is exhausted, the substring [0...i-1] is the longest common prefix.',
+    defaultText: 'flower,flow,flight',
+    defaultPattern: '',
+    expectedOutput: '"fl"'
+  },
+  {
+    id: 'valid_anagram',
+    sequenceNum: 3,
+    category: 'String Parsing & Tokenization',
+    title: 'Valid Anagram & Group Anagrams',
+    leetcodeTag: 'LC #242 & #49',
+    difficulty: 'Easy',
+    invariant: 'Character frequency counters must be exactly equal for two anagram strings, or used as a 26-bucket serialized signature for grouping.',
+    details: 'Increments counts for characters in string S, decrements for T. If any count is non-zero, they are not anagrams. For grouping, this 26-element array acts as a unique hash key.',
+    defaultText: 'anagram',
+    defaultPattern: 'nagaram',
+    expectedOutput: 'true (Both strings match frequency counts)'
+  },
+  {
+    id: 'isomorphic_strings',
+    sequenceNum: 4,
+    category: 'String Parsing & Tokenization',
+    title: 'Isomorphic Strings',
+    leetcodeTag: 'LC #205',
+    difficulty: 'Easy',
+    invariant: 'A strict one-to-one character bijection map S[i] <-> T[i] must hold across the entire string length.',
+    details: 'Maintains two mapping tables: mapS to track what S[i] maps to in T, and mapT to track what T[i] maps to in S. Any conflict breaks the bijectivity.',
+    defaultText: 'egg',
+    defaultPattern: 'add',
+    expectedOutput: 'true (S and T map perfectly bijectively)'
+  },
+  {
+    id: 'atoi',
+    sequenceNum: 5,
+    category: 'String Parsing & Tokenization',
+    title: 'String to Integer (atoi)',
+    leetcodeTag: 'LC #8',
+    difficulty: 'Medium',
+    invariant: 'Parse characters through a state machine: skip whitespace -> sign check -> accumulate digits -> clamp within 32-bit signed range.',
+    details: 'Iterates text. Standard state transition: state goes from whitespace to sign, then to digits. Clamps to [-2^31, 2^31 - 1] immediately upon overflow detection.',
+    defaultText: '   -42 with words',
+    defaultPattern: '',
+    expectedOutput: '-42'
+  },
+  {
+    id: 'string_compression',
+    sequenceNum: 6,
+    category: 'String Parsing & Tokenization',
+    title: 'String Compression',
+    leetcodeTag: 'LC #443',
+    difficulty: 'Medium',
+    invariant: 'Two-pointer design: a "read" head scans repetitions while a "write" head overwrites the array in-place with characters and counts.',
+    details: 'Uses constant extra space. Scans repetitions of chars. Writes char, then if count > 1, writes its string representation digit-by-digit, incrementing the write index.',
+    defaultText: 'aabbbcccc',
+    defaultPattern: '',
+    expectedOutput: '"a2b3c4" (New length: 6)'
+  },
+
+  // Category 2: Palindrome Expansion Radar
+  {
+    id: 'valid_palindrome',
+    sequenceNum: 7,
+    category: 'Palindrome Expansion Radar',
+    title: 'Valid Palindrome',
+    leetcodeTag: 'LC #125',
+    difficulty: 'Easy',
+    invariant: 'Two pointers starting at extreme ends move inward, skipping non-alphanumeric characters and comparing case-insensitively.',
+    details: 'Filters out punctuation and casing. Left starts at 0, Right starts at N-1. If characters at Left and Right differ, it is not a palindrome.',
+    defaultText: 'A man, a plan, a canal: Panama',
+    defaultPattern: '',
+    expectedOutput: 'true (Valid palindrome ignoring case and symbols)'
+  },
+  {
+    id: 'longest_palindromic_substring',
+    sequenceNum: 8,
+    category: 'Palindrome Expansion Radar',
+    title: 'Longest Palindromic Substring',
+    leetcodeTag: 'LC #5',
+    difficulty: 'Medium',
+    invariant: 'Every character (and gap) is treated as a potential palindrome center. Expand outward symmetrically while characters match.',
+    details: 'For each index i, we expand for an odd palindrome centered at i, and an even palindrome centered between i and i+1. Tracks the longest valid match found.',
+    defaultText: 'babad',
+    defaultPattern: '',
+    expectedOutput: '"bab" or "aba"'
+  },
+  {
+    id: 'palindromic_substrings_count',
+    sequenceNum: 9,
+    category: 'Palindrome Expansion Radar',
+    title: 'Palindromic Substrings Count',
+    leetcodeTag: 'LC #647',
+    difficulty: 'Medium',
+    invariant: 'Counts total valid expansions from all N odd and N-1 even palindrome centers.',
+    details: 'Similar to LeetCode #5, but instead of tracking the maximum length, we sum the number of successful outward steps across all center points.',
+    defaultText: 'aaa',
+    defaultPattern: '',
+    expectedOutput: '6 ("a", "a", "a", "aa", "aa", "aaa")'
+  },
+
+  // Category 3: Substring Pattern Matchers
+  {
+    id: 'strstr_naive',
+    sequenceNum: 10,
+    category: 'Substring Pattern Matchers',
+    title: 'Naive Sliding Substring Search (strStr)',
+    leetcodeTag: 'LC #28 Baseline',
+    difficulty: 'Easy',
+    invariant: 'Slide pattern cursor by exactly 1 position on mismatch, performing O(N * M) brute-force character verification.',
+    details: 'Compares P against T starting at every index i in T. On mismatch, resets text pointer i to i_start + 1 and pattern pointer j to 0.',
+    defaultText: 'ABABDABACDABABCABAB',
+    defaultPattern: 'ABABC',
+    expectedOutput: '10'
+  },
+  {
+    id: 'kmp_lps',
+    sequenceNum: 11,
+    category: 'Substring Pattern Matchers',
+    title: 'KMP: LPS Table Precomputation',
+    leetcodeTag: 'KMP Prep',
+    difficulty: 'Medium',
+    invariant: 'LPS[i] tracks the length of the longest proper prefix of P[0...i] that is also a suffix of P[0...i]. Precomputes fallback states.',
+    details: 'Computes LPS array dynamically. Pointer len tracks matching prefix length. If pattern[i] == pattern[len], LPS[i] = ++len. Otherwise, fall back len = LPS[len-1] recursively.',
+    defaultText: 'ABABCABAB',
+    defaultPattern: '',
+    expectedOutput: '[0, 0, 1, 2, 0, 1, 2, 3, 4]'
+  },
+  {
+    id: 'kmp_search',
+    sequenceNum: 12,
+    category: 'Substring Pattern Matchers',
+    title: 'KMP: Full Text Search',
+    leetcodeTag: 'LC #28 Optimal',
+    difficulty: 'Hard',
+    invariant: 'Maintains linear O(N + M) time. Never backtracks the text pointer i; on mismatch, it queries LPS[j-1] to skip redundant matches.',
+    details: 'Checks T[i] and P[j]. If they match, increment i and j. If j reaches pattern length, a match is found. If they mismatch, set j = LPS[j-1] (if j > 0) without decreasing i.',
+    defaultText: 'ABABDABACDABABCABAB',
+    defaultPattern: 'ABABCABAB',
+    expectedOutput: '[10] (Occurs at starting index 10)'
+  },
+  {
+    id: 'repeated_substring',
+    sequenceNum: 13,
+    category: 'Substring Pattern Matchers',
+    title: 'Repeated Substring Pattern',
+    leetcodeTag: 'LC #459',
+    difficulty: 'Easy',
+    invariant: 'If a string exhibits true periodicity, the LPS array value of its last character will satisfy: len % (len - LPS[len-1]) == 0.',
+    details: 'Precomputes the LPS array of string S. Let k = LPS[N-1]. If k > 0 and N % (N - k) == 0, then S is formed by repeating a substring of length N - k.',
+    defaultText: 'ababab',
+    defaultPattern: '',
+    expectedOutput: 'true (repeated pattern "ab" of length 2)'
+  },
+  {
+    id: 'rabin_karp',
+    sequenceNum: 14,
+    category: 'Substring Pattern Matchers',
+    title: 'Rabin-Karp: Rolling Hash Search',
+    leetcodeTag: 'LC #28 Hashing',
+    difficulty: 'Medium',
+    invariant: 'Computes a polynomial sliding hash of the pattern and text window in O(1) step-time. Verifies character-by-character ONLY on hash collision.',
+    details: 'Uses base B (e.g., 256) and prime M (e.g., 101). Rolls the hash forward: removes the outgoing character contribution and adds the incoming character in O(1). Detects and flags spurious hits.',
+    defaultText: 'AABAACAADAABAABA',
+    defaultPattern: 'AABA',
+    expectedOutput: '0, 11, 12'
+  },
+  {
+    id: 'z_algorithm',
+    sequenceNum: 15,
+    category: 'Substring Pattern Matchers',
+    title: 'Z-Algorithm: Linear Pattern Matching',
+    leetcodeTag: 'Z-Algo',
+    difficulty: 'Hard',
+    invariant: 'Maintains a matching [L, R] window (the Z-box). Reuses previous Z-values when current index i is inside [L, R] to achieve O(N + M) time.',
+    details: 'Constructs Z-array for string S = Pattern + "$" + Text. Z[i] is the length of the longest common prefix between S and S[i...]. Visualizes the active sliding [L, R] box.',
+    defaultText: 'aab$baabaa',
+    defaultPattern: 'aab',
+    expectedOutput: '[0, 1, 0, 0, 0, 3, 1, 0, 2, 1] (Z-array)'
+  },
+  {
+    id: 'manacher',
+    sequenceNum: 16,
+    category: 'Substring Pattern Matchers',
+    title: "Manacher's Algorithm: O(N) Palindromes",
+    leetcodeTag: 'LC #5 Optimal',
+    difficulty: 'Hard',
+    invariant: 'Transforms string with dummy separators to handle even lengths. Reuses mirror symmetry center C to pre-size radius P[i] before expanding.',
+    details: 'Maintains current center C and right boundary R. If current i is within R, we initialize its palindrome radius P[i] to min(R - i, P[i\']) where i\' is i\'s mirror index across C. Then expand outward.',
+    defaultText: 'babad',
+    defaultPattern: '',
+    expectedOutput: '"bab" or "aba"'
+  }
+];
