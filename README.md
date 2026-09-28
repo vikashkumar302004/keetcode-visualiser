@@ -1,4 +1,4 @@
-# Keetcode® | Algorithmic Intelligence & DSA Visualizer Suite
+# Keetcode® | DSA Algorithm Visualizer Suite
 
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -7,46 +7,32 @@
 [![Firebase Auth](https://img.shields.io/badge/Firebase_Auth-v11.0-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **Keetcode®** is an interactive, zero-distraction Data Structures and Algorithms visualizer portal built for deep thinkers, competitive programmers, and software engineers. Designed with a dark glassmorphic UI, cinematic typography, and real-time execution step tracing.
+> **Keetcode®** is an interactive Data Structures and Algorithms visualizer portal I built to help students, competitive programmers, and developers understand how algorithms work under the hood.
 
 ---
 
-## 🌟 Vision & Motivation
+## 💡 About The Project
 
-### Built by **Vikash** (Founder & Lead Architect, B.Tech)
+I created **Keetcode®** because learning DSA from static diagrams, dry pseudocode, or textbook formulas often lacks clarity. When practicing problem-solving, seeing step-by-step state changes, pointer movements, and memory representations in real time makes a huge difference.
 
-Data Structures and Algorithms are frequently taught through static diagrams and textbook equations. **Keetcode®** was conceived to solve this fundamental gap by providing interactive, step-by-step state engines for 16 major DSA domains.
-
-Whether analyzing complex graph pathfinding (Dijkstra/Kruskal), tree balancing (BST/AVL), string pattern matching (KMP/Z-Algorithm), or recursive backtracking state trees (N-Queens/Sudoku), Keetcode transforms abstract code into intuitive visual physics.
+This portal brings together **16 major DSA domains** into interactive visualizers where you can step through algorithms, test custom inputs, and observe variable states live.
 
 ---
 
-## 🏗️ Architecture & System Design
+## 🏗️ How It's Built
 
-Keetcode® uses a modular architecture combining high-performance React 19 visualizer engines, Vite bundling, and Firebase Authentication:
+Keetcode® is designed as a fast, modular React web app powered by Vite and Firebase Authentication:
 
-```mermaid
-graph TD;
-    Client[Keetcode Portal Frontend] --> |1-Click Google Auth| Firebase[Firebase Auth & Google OAuth]
-    Client --> |Vite Proxy /api| ExpressServer[Express API Backend]
-    Client --> |Lazy Load| Engine1[Array Algorithms Engine]
-    Client --> |Lazy Load| Engine2[Graph Suite Engine]
-    Client --> |Lazy Load| Engine3[BST & Tree Engine]
-    Client --> |Lazy Load| Engine4[16 DSA Engines]
-    Client --> |Real-time Telemetry| VercelAnalytics[Vercel & Firebase Analytics]
-```
-
-### Key Technical Highlights:
-- **Modular Lazy Loading**: All 16 DSA visualizers are decoupled into standalone sub-applications dynamically loaded via `React.lazy()` for optimal performance.
-- **Glassmorphic UI System**: Custom CSS `.liquid-glass` engine built with luminosity blending, backdrop-filters, and Google Playfair Display & Inter typography.
-- **1-Click Firebase Google OAuth**: Integrated `signInWithPopup` authentication with state persistence.
-- **Express Backend API**: Lightweight Node.js authentication server with persistent JSON storage.
+- **Modular Lazy Loading**: Every algorithm engine is isolated into standalone modules and dynamically loaded using `React.lazy()` to keep initial page loads fast.
+- **Interactive Visual Engines**: Step-by-step execution engines designed for arrays, trees, graphs, strings, and matrices.
+- **Glassmorphic UI**: Modern dark theme layout built with responsive CSS, smooth transitions, and live step logs.
+- **Firebase Auth**: Integrated Google sign-in with local state persistence.
 
 ---
 
 ## 🚀 16 Interactive Algorithm Engines
 
-| # | Visualizer Suite | Key Algorithms & Topics Included | Difficulty |
+| # | Visualizer Suite | Key Algorithms & Topics Included | Level |
 |---|---|---|---|
 | 1 | **Array Algorithms Engine** | Kadane's Algorithm, Prefix Sums, Dutch National Flag, Array Rotations | Beginner |
 | 2 | **Binary Search & Answer Space** | Lower/Upper Bound, Search in Rotated Array, Answer Space (Aggressive Cows) | Intermediate |
@@ -73,7 +59,7 @@ graph TD;
 - **Node.js**: v18.0.0 or higher
 - **npm**: v9.0.0 or higher
 
-### Installation Steps
+### Getting Started
 
 1. **Clone the repository**:
    ```bash
@@ -86,26 +72,20 @@ graph TD;
    npm install
    ```
 
-3. **Start the Frontend Development Server**:
+3. **Start Frontend Server**:
    ```bash
    npm run dev
    ```
-   *The application will launch on `http://localhost:3000/`.*
+   *Runs locally on `http://localhost:3000/`.*
 
-4. **Start the Express Backend API (Optional)**:
+4. **Start Express API Backend (Optional)**:
    ```bash
    npm run server
    ```
-   *The backend API will run on `http://localhost:5000/`.*
+   *Runs locally on `http://localhost:5000/`.*
 
 ---
 
 ## 📄 License
 
-Distributed under the **MIT License**. See `LICENSE` for more information.
-
----
-
-<p align="center">
-  Crafted with ❤️ by <b>Vikash</b> (B.Tech)
-</p>
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
