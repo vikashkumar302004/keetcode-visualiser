@@ -148,6 +148,7 @@ export default function App() {
     description: 'Idle',
     line: 1,
     stack: [],
+    inputCursor: 0,
     variables: {},
     logs: []
   };

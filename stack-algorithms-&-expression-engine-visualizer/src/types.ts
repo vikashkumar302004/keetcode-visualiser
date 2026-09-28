@@ -95,7 +95,7 @@ export interface SimulationStep {
   stack: StackItem[];
   secondaryStack?: StackItem[]; // for custom problems like queue-using-stacks (outStack) or basic-calc
   inputTokens?: TokenItem[];
-  inputCursor: number;
+  inputCursor?: number;
   outputString?: string;
   variables: Record<string, any>;
   precedenceCompare?: PrecedenceComparison;
